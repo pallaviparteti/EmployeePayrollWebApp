@@ -1,4 +1,4 @@
-<html lang="en">
+< lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -7,9 +7,10 @@
     <link rel="stylesheet" href="../css/addEmployee.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600&display=swap">
     <title>Employee Payroll Form</title>
+    <script type="text/Javascript" src="../js/addEmployee.js"></script>
 </head>
 
-<body>
+<div>
     <header class="header-content header">
         <div class="logo-content">
             <img src="../assets/images/logo.png" alt="">
@@ -53,7 +54,9 @@
                         <img class="profile" id="image4" src="../assets/profile-images/Ellipse -7.png">
                     </label>
                 </div>
+
             </div>
+            
             <div class="row-content">
                 <label for="gender" class="label text">Gender</label>
                 <div>
@@ -84,10 +87,9 @@
                     value="400000">
                 <output class="salary-output text" for="salary">400000</output>
             </div>
-    </div>  
-
-    <!-- UC 5 -->
-    <div class="row-content">
+ 
+<!-- UC 5 -->
+ <div class="row-content">
         <label class="label text" for="startDate">Start Date:</label>
       <div>
       <select id="day" name="Day">
@@ -160,18 +162,6 @@
         </div>
       </div>
     </form>
-    </div>
- 
-  <script>
-    const salary=document.querySelector('#salary');
-    const output = document.querySelector('.salary-output');
-    salary.addEventListener('input',function(){
-      output.innerHTML = salary.value;
-      });
-    </script>
-      </form>
-
-    </div>
 </body>
 
 </html>
